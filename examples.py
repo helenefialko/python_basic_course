@@ -29,9 +29,9 @@ t={"1":"hh"}
 print(type(t))
 
 
-name='Tur'
-phone_number='123'
-group='first'
+name = input('Enter name: ')
+phone_number = input('Enter phone_number: ')
+group = input('Enter group: ')
 print(f'{name}:{phone_number} [{group}]')
 
 #the lesson is over
