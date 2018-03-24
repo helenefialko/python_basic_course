@@ -6,5 +6,6 @@
 #    print('Division by zero')
 #except Exception as e:   #all exceptions
 #    print(e)
+# finally:   #in all cases
 
 
