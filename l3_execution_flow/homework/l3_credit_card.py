@@ -4,17 +4,17 @@ cvv = input(str('Please, enter CVV: '))
 
 if len(num) != 16:
     exit()
+
+try:
+    date=int(date)
+except Exception as e:
+    print('Ok')
 else:
-    try:
-        date=int(date)
-    except Exception as e:
-        print('Ok')
-    else:
-        exit()
+    exit()
 
 if len(cvv)<3:
     print('CVV is not correct!')
     exit()
-else:
-    print('Ha-ha-ha.Now I will use your credit card!')
+
+print('Ha-ha-ha.Now I will use your credit card!')
 
