@@ -15,7 +15,7 @@ while True:
 
     for i in num:
         if len(i) != 4:
-            continue
+            continue      #optimized = to use here break and not check all other elements
         else:
             exc += 1
 
