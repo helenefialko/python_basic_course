@@ -130,11 +130,18 @@ def correct_csv_file_creation(name_list, phone_list, exp_list, card_list):
             ind += 1
     return temp_dict
 
+# creation of headers in file
+def creation_of_headers_in_csv_file():
+    with open('cardholders_errors.csv', 'w') as csv_file:
+        header = ['name', 'phone', 'exp_date', 'card']
+        writer = csv.DictWriter(csv_file, fieldnames = header)
+        writer.writeheader()
+    return None
+
 # writing to the file if incorrect
 def incorrect_csv_file_creation(temp_dict):
     with open('cardholders_errors.csv', 'a') as csv_file:
         header = ['name', 'phone', 'exp_date', 'card']
         writer = csv.DictWriter(csv_file, fieldnames = header)
-        writer.writeheader()
         writer.writerow(temp_dict)
     return None
